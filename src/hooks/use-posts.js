@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import useAxios from "./use-axios";
-import _ from "lodash";
 
 let cache = {};
 

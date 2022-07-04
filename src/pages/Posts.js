@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import usePosts from "../hooks/use-posts";
 
 const Posts = () => {
-  const posts = usePosts(5);
+  const posts = usePosts(5, true);
   return (
     <div>
       <Link to="/">Home</Link>

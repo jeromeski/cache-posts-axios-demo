@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import usePosts from "./hooks/use-posts";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
 import "./styles.css";
