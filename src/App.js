@@ -1,12 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import usePosts from "./hooks/use-posts";
+import Home from "./pages/Home";
+import Posts from "./pages/Posts";
 import "./styles.css";
 
 export default function App() {
-  const posts = usePosts(5)
   return (
     <div className="App">
-      <pre>{JSON.stringify(posts, null, 2)}</pre>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Posts />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
