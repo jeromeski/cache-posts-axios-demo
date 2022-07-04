@@ -22,7 +22,6 @@ const usePosts = (uid, { listen } = { listen: true }) => {
     }
   }, [data]);
 
-  console.log("cached", cached);
   return posts;
 };
 
