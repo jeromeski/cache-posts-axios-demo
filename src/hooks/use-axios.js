@@ -18,7 +18,6 @@ const useAxios = () => {
   useEffect(() => {
     return () => controller?.abort();
   }, [controller]);
-
   return [data, fetchPosts];
 };
 

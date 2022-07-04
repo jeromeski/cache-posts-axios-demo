@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import usePosts from "../hooks/use-posts";
 
 const Posts = () => {
-  const posts = usePosts(5, true);
+  const posts = usePosts(5, { listen: true });
   return (
     <div>
       <Link to="/">Home</Link>
